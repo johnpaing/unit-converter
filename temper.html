@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script src="script.js"></script>
+     <link rel="stylesheet" href="tabs.css"/>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+
+    <main class="main">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="length.html">Length Converter</a></li>
+                <li><a href="weight.html">Weight Converter</a></li>
+                <li><a href="temper.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+      </main>
+
+
+    <form onsubmit="convertTemperature(); return false;" id="form">
+        
+        <input type="number" id="input" placeholder="Enter value">
+        <select id="fromtemp">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+
+        to
+
+        <select id="totemp">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+
+        <button type="submit" id="sub">Convert</button>
+        <button onclick="resetForm()" type="reset" id="bt" style="display:none;">Reset</button>
+    </form>
+
+    <p id="Result"></p>
+
+    
+
+</body>
+<footer>
+    <p class="foot">&copy; 2026 Unit Converter Web. All rights reserved by John Paing.</p>
+</footer>
+</html>
